@@ -1,0 +1,38 @@
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.headings{
+    color: white;
+}
+#icons{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.ul{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+}
+li {
+    margin-right: 40px;
+    
+  }
+
+#myimg{
+    margin-left: 40px;
+    }
+
+#forfont{
+    font-family: cursive;
+}
