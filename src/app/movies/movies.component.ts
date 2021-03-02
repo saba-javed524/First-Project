@@ -6,9 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./movies.component.css']
 })
 export class MoviesComponent {
+  searchFilter : string = 'batman';
 
   movies: any[] = [
-    [
+    
       {
         "movieId": 1,
         "movieName": "Batman",
@@ -18,22 +19,21 @@ export class MoviesComponent {
         "movieRating": 4.9,
       },
       {
-        "movieId": 1,
+        "movieId": 2,
         "movieName": "Harry Potter",
-        "releaseDate": "March 20, 2012",
+        "releaseDate": "January 22, 2019",
         "movieType": "Season",
-        "runTime": "02:20:02",
-        "rating": 4.9,
+        "movieRuntime": "02:50:01",
+        "movieRating": 4.8,
       },
       {
-        "movieId": 1,
+        "movieId": 3,
         "movieName": "Attack On Titan",
-        "releaseDate": "March 20, 2012",
+        "releaseDate": "Feb 20, 2021",
         "movieType": "Season",
-        "runTime": "02:20:02",
-        "rating": 4.9,
+        "movieRuntime": "04:30:06",
+        "movieRating": 5.0,
       },
-    ]
   ];
 
 }
