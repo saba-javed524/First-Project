@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavBar } from './navbar/navbar.component';
@@ -21,6 +22,7 @@ import { ReactiveformComponent } from './reactiveform/reactiveform.component';
   ],
   imports: [
     BrowserModule, //makes it runs correctly in the browser
+    HttpClientModule,
     RouterModule.forRoot([
       { path: 'welcome', component: WelcomeComponent },
       { path: 'movies', component: MoviesComponent },
