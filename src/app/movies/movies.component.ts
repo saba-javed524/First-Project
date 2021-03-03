@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { MovieService } from '../services/movie.service';
 
 @Component({
@@ -9,8 +10,8 @@ import { MovieService } from '../services/movie.service';
 export class MoviesComponent implements OnInit {
   movies: any[] = [];
   query: string = '';
-  
-  constructor(private movieService: MovieService) {}
+
+  constructor(private movieService: MovieService, private router: Router) { }
 
   searchMovies() {
     this.movieService.searchMovies(this.query).subscribe((data: any) => {
@@ -18,6 +19,10 @@ export class MoviesComponent implements OnInit {
       this.movies = data.Search;
     });
   }
-
-  ngOnInit(): void {}
+  ngOnInit(): void { }
+  goToDetailPage(movie: any) {
+    let imdbId = movie.imdbID;
+    console.log("Sent to detail page", imdbId);
+    this.router.navigate(['movies', imdbId,]);
+  }
 }

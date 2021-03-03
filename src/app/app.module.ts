@@ -10,7 +10,7 @@ import { MoviesComponent } from './movies/movies.component';
 import { NewsComponent } from './news/news.component';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { FormsModule } from '@angular/forms';
-import { MoviedetailComponent } from './moviedetail/moviedetail.component';
+import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { MoviedetailComponent } from './moviedetail/moviedetail.component';
     MoviesComponent,
     NewsComponent,
     ReactiveformComponent,
-    MoviedetailComponent,
+    MovieDetailComponent,
   ],
   imports: [
     BrowserModule, //makes it runs correctly in the browser
@@ -30,9 +30,9 @@ import { MoviedetailComponent } from './moviedetail/moviedetail.component';
     RouterModule.forRoot([
       { path: 'welcome', component: WelcomeComponent },
       { path: 'movies', component: MoviesComponent },
-      { path: 'movies/:id', component: MoviedetailComponent },
-      { path: 'moviedetail', component: MoviedetailComponent },
+      { path: 'movies/:id', component: MovieDetailComponent },
       { path: 'news', component: NewsComponent },
+      // { path: 'news/:id', component: NewsComponent },
       { path: 'reactiveform', component: ReactiveformComponent },
       { path: 'errorpage', component: ErrorpageComponent },
       { path: '', redirectTo: 'welcome', pathMatch: 'full' },
@@ -42,4 +42,4 @@ import { MoviedetailComponent } from './moviedetail/moviedetail.component';
   providers: [],
   bootstrap: [AppComponent], //lists our app component as starting component for our application
 })
-export class AppModule {}
+export class AppModule { }
