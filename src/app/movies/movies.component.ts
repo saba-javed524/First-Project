@@ -17,6 +17,7 @@ export class MoviesComponent implements OnInit {
     this.movieService.searchMovies(this.query).subscribe((data: any) => {
       console.log(data);
       this.movies = data.Search;
+      console.log(this.movies);
     });
   }
   ngOnInit(): void { }
