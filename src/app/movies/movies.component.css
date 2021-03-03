@@ -23,6 +23,7 @@
     margin-bottom: 2%;
     text-align: center;
 }
+
   
   #logo h5 {
     font-size: 20px;
@@ -31,6 +32,7 @@
     letter-spacing: -1px;
     margin-bottom: 2%;
 }
+
 
   #logo p{
     padding-bottom: 20px;
@@ -46,6 +48,10 @@
     border: 0.5px solid grey;
   }
   
+.poster{
+    height: 100px;
+    width: 100px;
+}
 
 
   

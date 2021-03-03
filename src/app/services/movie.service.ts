@@ -12,7 +12,7 @@ export class MovieService {
     return this.http.get(`http://www.omdbapi.com/?apikey=897a51d8&s=${q}`);
   }
   public fetchMovieById(imdbId: string) {
-    // return this.http.get(`http://www.omdbapi.com/?apikey=897a51d8&s=${q}`);
+    return this.http.get(`http://www.omdbapi.com/?apikey=897a51d8&s=${imdbId}`);
 
   }
 }

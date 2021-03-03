@@ -9,9 +9,11 @@
             <form role="form" id="form-buscar" class="col-md-12">
                 <div class="form-group">
                     <div class="input-group">
-                        <input id="1" class="form-control" type="text" name="search" placeholder="Search..." required />
+                        <input id="1" class="form-control" type="text" name="search" required
+                        [(ngModel)] = 'query'
+                        />
                         <span class="input-group-btn">
-    <button class="btn btn-success" type="submit">
+    <button class="btn btn-success" (click)="searchMovies()">
     <i class="glyphicon glyphicon-search" aria-hidden="true"></i> Search
     </button>
     </span>
@@ -22,11 +24,13 @@
     </div>
 
     <h1 id="results-heading" style="margin-bottom: 2%; margin-top: 2%;">Movie Search Results are:</h1>
+    <h5 id="logo" style="margin-bottom: 3%; font-family: cursive; text-align: left;">Searched By: {{query}}</h5>
 
     <table class="table" style="margin-bottom: 2%;">
         <thead class="thead-dark">
             <tr>
                 <th scope="col">No.</th>
+                <th scope="col">Movie Poster</th>
                 <th scope="col">Movie Name</th>
                 <th scope="col">Release Date</th>
                 <th scope="col">Type</th>
@@ -36,7 +40,8 @@
         <tbody>
             <tr *ngFor='let movie of movies;let i=index;'>
                 <th scope="row">{{i+1}}</th>
-                <td>{{movie.Title}}</td>
+                <td><img class="poster" [src]="movie.Poster"></td>
+                <td><a [routerLink]=['/movies',]>{{movie.Title}}</a></td>
                 <td>{{movie.Year}}</td>
                 <td>{{movie.Type}}</td>
                 <td>{{movie.imdbID}}</td>

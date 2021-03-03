@@ -9,6 +9,8 @@ import { ErrorpageComponent } from './errorpage/errorpage.component';
 import { MoviesComponent } from './movies/movies.component';
 import { NewsComponent } from './news/news.component';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
+import { FormsModule } from '@angular/forms';
+import { MoviedetailComponent } from './moviedetail/moviedetail.component';
 
 @NgModule({
   declarations: [
@@ -19,13 +21,17 @@ import { ReactiveformComponent } from './reactiveform/reactiveform.component';
     MoviesComponent,
     NewsComponent,
     ReactiveformComponent,
+    MoviedetailComponent,
   ],
   imports: [
     BrowserModule, //makes it runs correctly in the browser
     HttpClientModule,
+    FormsModule,
     RouterModule.forRoot([
       { path: 'welcome', component: WelcomeComponent },
       { path: 'movies', component: MoviesComponent },
+      { path: 'movies/:id', component: MoviedetailComponent },
+      { path: 'moviedetail', component: MoviedetailComponent },
       { path: 'news', component: NewsComponent },
       { path: 'reactiveform', component: ReactiveformComponent },
       { path: 'errorpage', component: ErrorpageComponent },

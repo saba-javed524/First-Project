@@ -4,17 +4,20 @@ import { MovieService } from '../services/movie.service';
 @Component({
   selector: 'app-movies',
   templateUrl: './movies.component.html',
-  styleUrls: ['./movies.component.css']
+  styleUrls: ['./movies.component.css'],
 })
-export class MoviesComponent {
-  searchFilter: string = 'batman';
-
+export class MoviesComponent implements OnInit {
   movies: any[] = [];
-  constructor(private movieService: MovieService) {
-    this.movieService.searchMovies("Avengers")
-      .subscribe((data: any) => {
-        console.log(data);
-        this.movies = data.Search;
-      });
+  query: string = '';
+  
+  constructor(private movieService: MovieService) {}
+
+  searchMovies() {
+    this.movieService.searchMovies(this.query).subscribe((data: any) => {
+      console.log(data);
+      this.movies = data.Search;
+    });
   }
+
+  ngOnInit(): void {}
 }
