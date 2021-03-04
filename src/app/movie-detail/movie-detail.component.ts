@@ -13,7 +13,7 @@ export class MovieDetailComponent implements OnInit {
   constructor(
     private movieService: MovieService,
     private route: ActivatedRoute
-  ) {}
+  ) { }
   fetchMovieById(imdbId: string) {
     this.movieService.fetchMovieById(imdbId).subscribe((data: any) => {
       this.movie = data;

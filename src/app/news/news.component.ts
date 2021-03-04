@@ -8,29 +8,23 @@ import { NewsService } from '../services/news.service';
   styleUrls: ['./news.component.css'],
 })
 export class NewsComponent implements OnInit {
-  news: any[] = [];
+  newsList: any[] = []
   newsquery: string = '';
 
-  constructor(private newsService: NewsService, private router : Router,) {}
+  constructor(private newsService: NewsService, private router: Router) { }
 
 
   searchNews() {
     this.newsService.searchNews(this.newsquery).subscribe((data: any) => {
-      console.log(data);
-      this.news = data.articles;
-      console.log(this.news);
+      this.newsService.news = data.articles;
+      this.newsList = data.articles;
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
-  goToDetailNewsPage(news: any) {
-    
-    let newsIndex = news.index;
-    console.log('Index',newsIndex)
-    let newsTitle = news.title;
-    console.log('Title',newsTitle)
-    
+  goToDetailNewsPage(newsIndex: any) {
+    this.router.navigate(['news', newsIndex]);
   }
 
 

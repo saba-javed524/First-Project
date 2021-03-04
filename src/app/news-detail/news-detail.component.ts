@@ -8,21 +8,21 @@ import { NewsService } from '../services/news.service';
   styleUrls: ['./news-detail.component.css']
 })
 export class NewsDetailComponent implements OnInit {
-  newsId: string = '';
+  newsIndex: number = -1;
   news: any;
 
-  constructor(
-    private newsService: NewsService,
-  ) { }
+  constructor(private newsService: NewsService, private route: ActivatedRoute) {
 
-  fetchNewsById(newsId: string) {
-    this.newsService.fetchNewsById(newsId).subscribe((data: any) => {
-      this.news = data;
-      console.log('News check', this.news);
-    });
   }
 
+
+
   ngOnInit(): void {
+    this.route.params.subscribe((params) => {
+      this.newsIndex = params.index;
+      if (this.newsIndex >= 0)
+        this.news = this.newsService.news[this.newsIndex];
+    });
   }
 
 }

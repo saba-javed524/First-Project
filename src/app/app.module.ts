@@ -34,7 +34,6 @@ import { NewsDetailComponent } from './news-detail/news-detail.component';
       { path: 'movies', component: MoviesComponent },
       { path: 'movies/:id', component: MovieDetailComponent },
       { path: 'news', component: NewsComponent },
-      { path: 'newsdetail', component: NewsDetailComponent },
       { path: 'news/:index', component: NewsDetailComponent },
       { path: 'reactiveform', component: ReactiveformComponent },
       { path: 'errorpage', component: ErrorpageComponent },
@@ -45,4 +44,4 @@ import { NewsDetailComponent } from './news-detail/news-detail.component';
   providers: [],
   bootstrap: [AppComponent], //lists our app component as starting component for our application
 })
-export class AppModule {}
+export class AppModule { }
