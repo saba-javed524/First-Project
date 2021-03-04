@@ -13,7 +13,7 @@ export class NewsService {
     );
   }
 
-  public fetchMovieById(id: string) {
+  public fetchNewsById(id: string) {
     return this.http.get(`https://newsapi.org/v2/everything?apiKey=a938f2904fbc47809b1f97811e00a4e5&q=${id}`);
   }
 

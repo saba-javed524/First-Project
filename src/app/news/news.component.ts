@@ -26,6 +26,8 @@ export class NewsComponent implements OnInit {
 
   goToDetailNewsPage(news: any) {
     
+    let newsIndex = news.index;
+    console.log('Index',newsIndex)
     let newsTitle = news.title;
     console.log('Title',newsTitle)
     

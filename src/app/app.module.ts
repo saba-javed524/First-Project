@@ -35,7 +35,7 @@ import { NewsDetailComponent } from './news-detail/news-detail.component';
       { path: 'movies/:id', component: MovieDetailComponent },
       { path: 'news', component: NewsComponent },
       { path: 'newsdetail', component: NewsDetailComponent },
-      // { path: 'news/:id', component: NewsComponent },
+      { path: 'news/:index', component: NewsDetailComponent },
       { path: 'reactiveform', component: ReactiveformComponent },
       { path: 'errorpage', component: ErrorpageComponent },
       { path: '', redirectTo: 'welcome', pathMatch: 'full' },

@@ -52,7 +52,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let newslist of news; let i = index" (click)="goToDetailNewsPage(news)">
+      <tr *ngFor="let newslist of news; let i = index" (click)="goToDetailNewsPage(newslist)">
         <th scope="row">{{ i + 1 }}</th>
         <td><img class="poster" [src]="newslist.urlToImage" /></td>
         <td>{{ newslist.title }}</td>
