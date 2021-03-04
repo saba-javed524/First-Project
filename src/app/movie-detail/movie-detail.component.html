@@ -1,75 +1,69 @@
 <div class="wrapper">
-    <section class="hero">
-        <div class="jumbotron jumbotron-fluid mb-0">
-            <div class="container">
-                <div class="row justify-content-center text-center">
-                    <div class="col-md-10 col-lg-6">
-                        <i class="fa fa-film" id="icon"></i>
-                        <h1 class="display-5">{{movie?.Title}} Movie Detail</h1>
-                    </div>
-                </div>
-            </div>
+  <section class="hero">
+    <div class="jumbotron jumbotron-fluid mb-0">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-md-10 col-lg-6">
+            <i class="fa fa-film" id="icon"></i>
+            <h1 class="display-5">{{ movie?.Title }} Movie Detail</h1>
+          </div>
         </div>
-    </section>
-    <section id="sec-features" class="sec-features pt-5 pb-5">
-        <div class="container">
-            <div class="col-md-6">
-                <img style="margin-left: 350px;" [src]="movie?.Poster">
-            </div>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h3 class="h4">Title</h3>
-                    <p>{{movie?.Title}}</p>
+      </div>
+    </div>
+  </section>
+  <section id="sec-features" class="sec-features pt-5 pb-5">
+    <div class="container">
+      <div class="col-md-6">
+        <img style="margin-left: 350px" [src]="movie?.Poster" />
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h3 class="h4">Title</h3>
+          <p>{{ movie?.Title }}</p>
 
-                    <h3 class="h4">Year</h3>
-                    <p>{{movie?.Released}}</p>
+          <h3 class="h4">Year</h3>
+          <p>{{ movie?.Released }}</p>
 
+          <h3 class="h4">Rated</h3>
+          <p>{{ movie?.Rated }}</p>
 
+          <h3 class="h4">Released</h3>
+          <p>{{ movie?.Released }}</p>
 
-                    <h3 class="h4">Rated</h3>
-                    <p>{{movie?.Rated}}</p>
+          <h3 class="h4">Runtime</h3>
+          <p>{{ movie?.Runtime }}</p>
 
-                    <h3 class="h4">Released</h3>
-                    <p>{{movie?.Released}}</p>
+          <h3 class="h4">Genre</h3>
+          <p>{{ movie?.Genre }}</p>
 
-                    <h3 class="h4">Runtime</h3>
-                    <p>{{movie?.Runtime}}</p>
+          <h3 class="h4">Director</h3>
+          <p>{{ movie?.Director }}</p>
 
-                    <h3 class="h4">Genre</h3>
-                    <p>{{movie?.Genre}}</p>
+          <h3 class="h4">Writer</h3>
+          <p>{{ movie?.Writer }}</p>
 
-                    <h3 class="h4">Director</h3>
-                    <p>{{movie?.Director}}</p>
+          <h3 class="h4">Actors</h3>
+          <p>{{ movie?.Actors }}</p>
 
-                    <h3 class="h4">Writer</h3>
-                    <p>{{movie?.Writer}}</p>
+          <h3 class="h4">Plot</h3>
+          <p>{{ movie?.Plot }}</p>
 
-                    <h3 class="h4">Actors</h3>
-                    <p>{{movie?.Actors}}</p>
+          <h3 class="h4">Language</h3>
+          <p>{{ movie?.Language }}</p>
 
-                    <h3 class="h4">Plot</h3>
-                    <p>{{movie?.Plot}}</p>
+          <h3 class="h4">Country</h3>
+          <p>{{ movie?.Country }}</p>
 
-                    <h3 class="h4">Language</h3>
-                    <p>{{movie?.Language}}</p>
+          <h3 class="h4">Awards</h3>
+          <p>{{ movie?.Awards }}</p>
 
-                    <h3 class="h4">Country</h3>
-                    <p>{{movie?.Country}}</p>
+          <h3 class="h4">Ratings</h3>
+          <p>{{ movie?.Ratings }}</p>
 
-                    <h3 class="h4">Awards</h3>
-                    <p>{{movie?.Awards}}</p>
-
-                    <h3 class="h4">Ratings</h3>
-                    <p>{{movie?.Ratings}}</p>
-
-                    <h3 class="h4">imdbID</h3>
-                    <p>{{movie?.imdbID}}</p>
-                </div>
-
-
-
-
-            </div>
+          <h3 class="h4">imdbID</h3>
+          <p>{{ movie?.imdbID }}</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </div>

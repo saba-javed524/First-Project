@@ -1,26 +1,35 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { NewsService } from '../services/news.service';
 
 @Component({
   selector: 'app-news',
   templateUrl: './news.component.html',
-  styleUrls: ['./news.component.css']
+  styleUrls: ['./news.component.css'],
 })
 export class NewsComponent implements OnInit {
-  news : any[] = [];
-  newsquery : string = '';
+  news: any[] = [];
+  newsquery: string = '';
 
-  constructor(private newsService: NewsService) { }
+  constructor(private newsService: NewsService, private router : Router,) {}
+
 
   searchNews() {
-    this.newsService.searchNews(this.newsquery).subscribe((data:any) => {
+    this.newsService.searchNews(this.newsquery).subscribe((data: any) => {
       console.log(data);
       this.news = data.articles;
       console.log(this.news);
     });
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  goToDetailNewsPage(news: any) {
+    
+    let newsTitle = news.title;
+    console.log('Title',newsTitle)
+    
   }
+
 
 }

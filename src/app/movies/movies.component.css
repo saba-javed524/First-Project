@@ -1,57 +1,51 @@
-
-  #logo {
+#logo {
   color: #666;
-  width:100%;  
-  text-align: center; 
-  }
-  #logo h1 {
-      font-size: 40px;
-      text-shadow: 1px 2px 3px #999;
-      font-family: cursive;
-      font-weight: 700;
-      letter-spacing: -1px;
-      margin-bottom: 2%;
-  }
-
-  #results-heading {
-    font-size: 40px;
-    color: #666;
-    text-shadow: 1px 2px 3px #999;
-    font-family: cursive;
-    font-weight: 700;
-    letter-spacing: -1px;
-    margin-bottom: 2%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
+}
+#logo h1 {
+  font-size: 40px;
+  text-shadow: 1px 2px 3px #999;
+  font-family: cursive;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 2%;
 }
 
-  
-  #logo h5 {
-    font-size: 20px;
-    font-family: cursive;
-    font-weight: 200;
-    letter-spacing: -1px;
-    margin-bottom: 2%;
+#results-heading {
+  font-size: 40px;
+  color: #666;
+  text-shadow: 1px 2px 3px #999;
+  font-family: cursive;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 2%;
+  text-align: center;
 }
 
-
-  #logo p{
-    padding-bottom: 20px;
-  } 
-
-  #icon{
-      font-size: 55px;
-      margin-bottom: 1%;
-  }
-
-  .form-control{
-    border-radius: 18px;
-    border: 0.5px solid grey;
-  }
-  
-.poster{
-    height: 100px;
-    width: 100px;
+#logo h5 {
+  font-size: 20px;
+  font-family: cursive;
+  font-weight: 200;
+  letter-spacing: -1px;
+  margin-bottom: 2%;
 }
 
+#logo p {
+  padding-bottom: 20px;
+}
 
-  
+#icon {
+  font-size: 55px;
+  margin-bottom: 1%;
+}
+
+.form-control {
+  border-radius: 18px;
+  border: 0.5px solid grey;
+}
+
+.poster {
+  height: 100px;
+  width: 100px;
+}

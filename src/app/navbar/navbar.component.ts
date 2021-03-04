@@ -1,11 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector : 'nav-bar',
-    templateUrl : './navbar.component.html',
-    styleUrls : ['./navbar.component.css']
+  selector: 'nav-bar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.css'],
 })
-
-export class NavBar {
-
-}
+export class NavBar {}

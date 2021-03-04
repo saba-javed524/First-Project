@@ -11,6 +11,7 @@ import { NewsComponent } from './news/news.component';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 import { FormsModule } from '@angular/forms';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
+import { NewsDetailComponent } from './news-detail/news-detail.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { MovieDetailComponent } from './movie-detail/movie-detail.component';
     NewsComponent,
     ReactiveformComponent,
     MovieDetailComponent,
+    NewsDetailComponent,
   ],
   imports: [
     BrowserModule, //makes it runs correctly in the browser
@@ -32,6 +34,7 @@ import { MovieDetailComponent } from './movie-detail/movie-detail.component';
       { path: 'movies', component: MoviesComponent },
       { path: 'movies/:id', component: MovieDetailComponent },
       { path: 'news', component: NewsComponent },
+      { path: 'newsdetail', component: NewsDetailComponent },
       // { path: 'news/:id', component: NewsComponent },
       { path: 'reactiveform', component: ReactiveformComponent },
       { path: 'errorpage', component: ErrorpageComponent },
@@ -42,4 +45,4 @@ import { MovieDetailComponent } from './movie-detail/movie-detail.component';
   providers: [],
   bootstrap: [AppComponent], //lists our app component as starting component for our application
 })
-export class AppModule { }
+export class AppModule {}

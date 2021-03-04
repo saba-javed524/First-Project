@@ -1,36 +1,45 @@
 <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
-    <a [routerLink]="['/welcome']" id="forfont" class="navbar-brand" href="#"><img id='myimg' src="assets/logo.png" width="70px" />My First App!</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="nav navbar-nav navbar-center">
-        <li class="nav-item">
-          <a [routerLink]="['/welcome']" class="nav-link">
-            <i class="fa fa-home" id="icons"></i>
-            <h6 class="headings">Welcome Page</h6>
-            </a>
-        </li>
-        <li class="nav-item">
-          <a [routerLink]="['/movies']" class="nav-link" href="#">
-            <i class="fa fa-film" id="icons"></i>
-            <h6 class="headings">Search Movies</h6>
-            </a>
-        </li>
-        <li class="nav-item">
-          <a [routerLink]="['/news']" class="nav-link" href="#">
-            <i class="fa fa-newspaper-o" id="icons"></i>
-            <h6 class="headings">News</h6>
-            </a>
-        </li>
-        <li class="nav-item">
-          <a [routerLink]="['/reactiveform']" class="nav-link" href="#">
-            <i class="fa fa-list-alt" id="icons"></i>
-            <h6 class="headings">Reactive Form</h6>
-            </a>
-        </li>  
-      </ul>
-      
-    </div>
-  </nav>
+  <a [routerLink]="['/welcome']" id="forfont" class="navbar-brand" href="#"
+    ><img id="myimg" src="assets/logo.png" width="70px" />My First App!</a
+  >
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="nav navbar-nav navbar-center">
+      <li class="nav-item">
+        <a [routerLink]="['/welcome']" class="nav-link">
+          <i class="fa fa-home" id="icons"></i>
+          <h6 class="headings">Welcome Page</h6>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a [routerLink]="['/movies']" class="nav-link" href="#">
+          <i class="fa fa-film" id="icons"></i>
+          <h6 class="headings">Search Movies</h6>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a [routerLink]="['/news']" class="nav-link" href="#">
+          <i class="fa fa-newspaper-o" id="icons"></i>
+          <h6 class="headings">News</h6>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a [routerLink]="['/reactiveform']" class="nav-link" href="#">
+          <i class="fa fa-list-alt" id="icons"></i>
+          <h6 class="headings">Reactive Form</h6>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
