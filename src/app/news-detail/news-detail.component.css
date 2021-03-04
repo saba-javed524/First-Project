@@ -1,10 +1,14 @@
 #icon {
-    font-size: 55px;
-    margin-bottom: 1%;
-  }
+  font-size: 55px;
+  margin-bottom: 1%;
+}
 
-  #poster {
-    width: 250px;
-    height: 250px;
-    
-  }
+#poster {
+  width: 250px;
+  height: 250px;
+}
+
+.main {
+  margin-left: 250px;
+  padding: 0px 10px;
+}
